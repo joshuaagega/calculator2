@@ -1,22 +1,36 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-
 <head>
   <title>Calculator</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js">
+  </script>
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <script src="js/script.js"></script>
-
+  <script src="js/script.js">
+  </script>
 </head>
-
 <body>
+<div class="container">
   <h1>Calculator</h1>
-<form id="add">
-  <div class="form-group"> <label for="add1">1st number:</label> <input id="add1" class="form-control" type="text"> </div>
- <div class="form-group"> <label for="add2">2nd number:</label> <input id="add2" class="from-control" type="text"> </div>
-<button type="submit" class="btn">Add!</button>
-</form>
-<div id="output"> </div>
+  <form id="add" name="add">
+    <div class="form-group">
+      <label for="add1">1st number:</label> <input class="form-control" id="add1" type="text">
+    </div>
+    <div class="form-group">
+      <label for="add2">2nd number:</label> <input class="form-control" id="add2" type="text">
+    </div>
+    <button class="btn" type="submit">add</button>
+  </form>
+  <form id="multiply" name="multiply">
+    <div class="form-group">
+      <label for="multiply1">1st number;</label> <input class="form-control"  id="multiply1" type="text">
+    </div>
+    <div class="form-group">
+      <label for="multiply2">2nd number;</label> <input class="form-control" id="multiply2" type="text">
+    </div>
+     <button class="ml" type="submit">multiply<botton>
+    <div id="output"></div></button>
+  </form>
+</div>
 </body>
 </html>

@@ -23,4 +23,12 @@ event.preventDefault();
  var result = add(number1,number2);
  $("#output").text(result);
 });
+
+$("form#multiply").submit(function(event) {
+event.preventDefault();
+ var number1 = parseInt($("#multiply1").val());
+ var number2 = parseInt($("#multiply2").val());
+ var result = multiply(number1,number2);
+ $("#output").text(result);
+});
 });
