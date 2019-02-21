@@ -13,7 +13,10 @@ var divide = function(number1, number2) {
 
 // every thing below is user interface logic:
 $(document).ready(function(){
- var number1 = parseInt(prompt("Enter a number:"));
- var number2 = parseInt(prompt("Enter a number:"));
+$("form#add").submit(function(event)) {
+event.preventDefault();
+ var number1 = parseInt($("#add1").val());
+ var number2 = parseInt($("#add2").val());
  alert(add(number1, number2));
+});
 });
