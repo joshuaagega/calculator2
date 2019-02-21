@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.3.1.js">
   </script>
@@ -9,28 +11,45 @@
   <script src="js/script.js">
   </script>
 </head>
+
 <body>
-<div class="container">
-  <h1>Calculator</h1>
-  <form id="add" name="add">
+  <div class="container">
+    <h1>Calculator</h1>
     <div class="form-group">
-      <label for="add1">1st number:</label> <input class="form-control" id="add1" type="text">
+    <div class="col-md-4">
+      <form id="add" name="add">
+        <label for="add1">1st number:</label> <input class="form-control" id="add1" type="text">
     </div>
-    <div class="form-group">
-      <label for="add2">2nd number:</label> <input class="form-control" id="add2" type="text">
-    </div>
-    <button class="btn" type="submit">add</button>
+   </div>
+  <div class="form-group">
+ <div class="col-md-4">
+    <label for="add2">2nd number:</label> <input class="form-control" id="add2" type="text">
+  </div>
+  </div>
+<div class="col-md-4">
+  <button class="btn" type="submit">add</button>
+  <div id="output"></div></button>
+ </div>
   </form>
   <form id="multiply" name="multiply">
     <div class="form-group">
-      <label for="multiply1">1st number;</label> <input class="form-control"  id="multiply1" type="text">
+      <div class="col-md-4">
+        <label for="multiply1">1st number;</label> <input class="form-control" id="multiply1" type="text">
+      </div>
     </div>
     <div class="form-group">
-      <label for="multiply2">2nd number;</label> <input class="form-control" id="multiply2" type="text">
+      <div class="col-md-4">
+        <label for="multiply2">2nd number;</label> <input class="form-control" id="multiply2" type="text">
+      </div>
     </div>
-     <button class="ml" type="submit">multiply<botton>
-    <div id="output"></div></button>
+    <div class="form-group">
+      <div class="col-md-4">
+        <button class="ml" type="submit">multiply<botton>
+            <div id="output"></div></button>
+      </div>
+    </div>
   </form>
-</div>
+  </div>
 </body>
+
 </html>
