@@ -29,6 +29,6 @@ event.preventDefault();
  var number1 = parseInt($("#multiply1").val());
  var number2 = parseInt($("#multiply2").val());
  var result = multiply(number1,number2);
- $("#output").text(result);
+ $("#output1").text(result);
 });
 });
